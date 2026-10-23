@@ -1,0 +1,34 @@
+{
+  "name": "delcoin",
+  "version": "0.2.0",
+  "description": "Delcoin — Solana devnet token launch",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsx check.ts",
+    "launch": "tsx launch.ts",
+    "pool": "tsx create-pool.ts",
+    "send": "tsx send.ts",
+    "swap": "tsx swap.ts",
+    "relaunch": "tsx check.ts && tsx launch.ts && tsx create-pool.ts && tsx send.ts",
+    "secure": "tsx secure-authorities.ts"
+  },
+  "dependencies": {
+    "@raydium-io/raydium-sdk-v2": "0.1.95-alpha",
+    "@solana/spl-token": "0.4.15",
+    "@solana/spl-token-metadata": "0.1.6",
+    "@solana/web3.js": "1.98.4",
+    "@sqds/multisig": "2.1.4",
+    "bn.js": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "5.2.0",
+    "@types/node": "24.9.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@solana/web3.js": "1.98.4",
+    "@solana/spl-token": "0.4.15"
+  }
+}
